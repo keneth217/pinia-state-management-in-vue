@@ -11,10 +11,10 @@ export const useCounterStore=defineStore('couner',{
     },
     actions:{
         increment(){
-        this.count++
-},
-decrement(){
-    this.count--
-},
+      this.count++
+
+crement(){
+  this.count--
+
     },
 });
