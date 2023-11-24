@@ -4,7 +4,7 @@ export const useProductStore = defineStore("product", {
   state: () => ({
     products: [
       { id: 1, name: "Shoe", price: 500 },
-      { id: 2, name: "Clothes", price: 30 },
+      { id: 2, name: "Clothes", price: 300 },
     ],
   }),
   getters: {
