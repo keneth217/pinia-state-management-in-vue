@@ -28,7 +28,7 @@ const addProduct = () => {
     <div class="content">
       <ul>
         <li v-for="product in store.products" :key="product.id">
-          {{ product.name }}
+          <p> {{ product.id }} . {{ product.name }}</p>
         </li>
       </ul>
       <p>Total products:{{ store.productCount }}</p>
@@ -39,7 +39,7 @@ const addProduct = () => {
             <div>No products available.</div>
           </li>
           <li v-else v-for="product in store.productsCheaperThan(50)" :key="product.id">
-            <div v-if="product.price === 0">
+            <div v-if="product.price < 50">
               <div>No products less than ksh 50</div>
             </div>
             <div v-else>
